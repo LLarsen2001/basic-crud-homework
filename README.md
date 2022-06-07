@@ -1,24 +1,17 @@
 # README
+ Users api 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  http://localhost:3001/users
+  get '/users' = users controller#index => list of users
 
-Things you may want to cover:
+  http://localhost:3001/users/1
+  get'/users/:id' => user controller#show => one user
 
-* Ruby version
+  http://localhost:3001/users
+  post '/users' *need to send item data => users controller#create => create user
+ 
+ http://localhost:3001/users/1
+  put'/users/:id' *need to send user data => user controller#update => update an user
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  http://localhost:3001/users/1
+  delete'/users/:id' => user controller#destroy => deletes an user
